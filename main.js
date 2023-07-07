@@ -9,8 +9,10 @@ const array = ["rock", "paper", "scissors"]
 const computer = GetComputer(array)
 console.log(computer);
 
+
+
 function GetChoice() {
-    const MyChoice = prompt("Rock, Paper, or Scissors?: ");
+    let MyChoice = prompt("Rock, Paper, or Scissors?: ");
     MyChoice = MyChoice.toLowerCase();
     return MyChoice;
 }
