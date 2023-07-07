@@ -22,11 +22,19 @@ console.log(user)
 
 function playRound(arg1, arg2) {
     if (arg1 == arg2){ //Using == to ignore data type
-    return "Draw!";
+        return "Draw!"
     }
-
+    //User winning scenarios
+    else if ((arg1 === "rock" && arg2 === "paper") || (arg1 === "paper" && arg2 === "scissors") || (arg1 === "scissors" && arg2 === "rock")){
+        return "You win!"
+    }
+    else if ((arg2 == "rock" && arg1 == "paper") || (arg2 == "paper" && arg1 == "scissors") || (arg2 == "scissors" && arg1 == "rock")){
+        return "You lose!"
+    }
+    else {
+        return "Error."
+    }
 }
 
-//const answer = playRound(computer, user)
 
 console.log(playRound(computer, user))
