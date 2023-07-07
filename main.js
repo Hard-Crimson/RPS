@@ -19,3 +19,14 @@ function GetChoice() {
 
 const user = GetChoice();
 console.log(user)
+
+function playRound(arg1, arg2) {
+    if (arg1 == arg2){ //Using == to ignore data type
+    return "Draw!";
+    }
+
+}
+
+//const answer = playRound(computer, user)
+
+console.log(playRound(computer, user))
